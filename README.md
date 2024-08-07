@@ -1,4 +1,4 @@
-# CS361
+# CS361_README
 # Joonbum Kang
 # communication contract
 
