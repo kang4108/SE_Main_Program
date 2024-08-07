@@ -5,7 +5,7 @@
 # How to request data from Microservice A
 1. To request data from Microservice A, you need "MA_pn.py" which is provided in this repository.
 2. Make sure python is installed in your environment with additional extensions.
-   For example, Python can be installed using the command "pip install python" 
+   For example, essential extensions can be installed using the command "pip install python" and "pip install requests"
 3. Run the file with the microservice on seperate terminals and it'll request the data of username and action about their post.
 
 # How to receive data from Microservice A
