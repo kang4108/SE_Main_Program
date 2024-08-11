@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block content %}
+    <form method = "POST">
+        <h1 align = "center">
+            Create Your Account
+        </h1>
+<h2 align="center">Here are what you can do if you have an account:</h2>
+<br/>
+<h3 align="center">Upload a post</h3>
+<br/>
+<h3 align="center">Leave a comments</h3>
+<br/>
+<h3 align="center">Send a like</h3>
+<br/>
+    <div class = "form-group">
+        <label for = "email">Email Address(This will be used for log-in)</label>
+        <input type = "text" id="email" name="email" class = "form-control" placeholder = "Enter Your Email"/>
+
+        <label for = "email">Username(This will be your name for blog activities)</label>
+        <input type = "text" id="username" name="username" class = "form-control" placeholder = "Enter Your Username(must be more than 2 characters)"/>
+
+        <label for = "password1">Password(must be more than 4 digits)</label>
+        <input type = "password" id="password1" name="password1" class = "form-control" placeholder = "Enter Your Password"/>
+
+        <label for = "password2">Password Confirmation</label>
+        <input type = "password" id="password2" name="password2" class = "form-control" placeholder = "Confirm Your Password"/>
+    </br>
+    <div align = "center">
+    <button class = "btn btn-primary" type = "submit">Register</button>
+    </div>
+    </div>
+    </form>
+{% endblock %}
