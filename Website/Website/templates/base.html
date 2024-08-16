@@ -15,7 +15,7 @@
             <div class = "collapse navbar-collapse" id = "navbar">
                 <div class = "navbar-nav">
                   <a class="nav-item nav-link" href="/home">Home</a>
-                  {% if user.is_authenticated %}
+                  {% if user %}
                   <a class="nav-item nav-link" href="/logout">Logout</a>
                   <a align="center" style="color:white">you're logged in</a>
                   <a class="nav-item nav-link" href="/create-post-2">Upload</a>
