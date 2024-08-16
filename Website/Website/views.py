@@ -49,7 +49,7 @@ def create_post():
         if not text:
             flash('Text entry is empty', category='error')
         else:
-            post = Post(text=text, author_id=user["id"])
+            post = Post(text=text, author_name=user["username"], author_id=user["id"])
             db.session.add(post)
             db.session.commit()
             # notification microservice
@@ -71,7 +71,7 @@ def create_post_2():
         if not text:
             flash('Text entry is empty', category='error')
         else:
-            post = Post(text=text, author_id=user["id"])
+            post = Post(text=text, author_name=user["username"], author_id=user["id"])
             db.session.add(post)
             db.session.commit()
             # notification microservice

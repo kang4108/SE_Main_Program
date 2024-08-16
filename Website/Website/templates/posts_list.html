@@ -15,7 +15,7 @@
       {% for post in posts %}
       <div class="card border-dark">
         <div class="card-header d-flex justify-content-between align-items-center">
-          <a href="/posts/{{post.author_id}}">{{post.author_id}}</a>
+          <a href="/posts/{{post.author_id}}">{{post.author_name}}</a>
           {% if user["id"] == post.author_id %}
           <div class="btn-group">
             <button
